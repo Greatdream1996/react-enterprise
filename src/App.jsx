@@ -1,10 +1,10 @@
 import { ViewStyle } from './styles'
-import cc from 'classnames'
 
+import Demo from './views/redux'
 function App() {
   return (
     <ViewStyle>
-      <div className={cc('font-color')}>hello</div>
+      <Demo />
     </ViewStyle>
   )
 }
