@@ -1,10 +1,12 @@
 import { ViewStyle } from './styles'
 
-import Demo from './views/redux'
+// import Login from './views/login'
+import Layout from './views/layout'
 function App() {
   return (
     <ViewStyle>
-      <Demo />
+      {/* <Login /> */}
+      <Layout />
     </ViewStyle>
   )
 }

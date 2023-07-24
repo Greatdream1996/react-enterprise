@@ -1,5 +1,7 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 
+// 异步dispatch
+const fetchAction = createAsyncThunk('fetchAction', async () => {})
 const initialState = {
   count: 0
 }
@@ -14,6 +16,9 @@ const counterSlice = createSlice({
     decrement(state) {
       state.count -= 1
     }
+  },
+  extraReducers: {
+    [fetchAction.fulfilled](state, action) {}
   }
 })
 
