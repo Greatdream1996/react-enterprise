@@ -1,14 +1,8 @@
+import { useRoutes } from 'react-router-dom'
 import { ViewStyle } from './styles'
-
-// import Login from './views/login'
-import Layout from './views/layout'
+import routes from './routers'
 function App() {
-  return (
-    <ViewStyle>
-      {/* <Login /> */}
-      <Layout />
-    </ViewStyle>
-  )
+  return <ViewStyle>{useRoutes(routes)}</ViewStyle>
 }
 
 export default App

@@ -5,7 +5,6 @@ export const ViewStyle = styled.div.attrs((props) => {
     $tcolor: props.color || '#eeeeee'
   }
 })`
-  background-color: ${(props) => props.$tcolor};
   .font-color {
     color: red;
   }

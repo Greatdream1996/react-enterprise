@@ -1,4 +1,4 @@
-import { Layout, Space } from 'antd'
+import { Layout } from 'antd'
 
 const { Header, Footer, Sider, Content } = Layout
 
