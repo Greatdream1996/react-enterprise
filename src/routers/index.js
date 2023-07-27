@@ -2,6 +2,7 @@ import { Navigate } from 'react-router-dom'
 import React from 'react'
 const Login = React.lazy(() => import('../views/login'))
 const Layout = React.lazy(() => import('../views/layout'))
+const Redux = React.lazy(() => import('../views/redux'))
 const routes = [
   {
     path: '/',
@@ -13,7 +14,13 @@ const routes = [
   },
   {
     path: '/layout',
-    element: <Layout />
+    element: <Layout />,
+    children: [
+      {
+        path: '/layout/redux',
+        element: <Redux />
+      }
+    ]
   }
 ]
 export default routes

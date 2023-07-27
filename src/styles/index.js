@@ -21,7 +21,7 @@ export const ViewStyle = styled.div.attrs((props) => {
     min-height: 120;
     line-height: 120px;
     color: #fff;
-    background-color: #108ee9;
+    background-color: #99ccf1;
   }
   .siderStyle {
     text-align: center;
